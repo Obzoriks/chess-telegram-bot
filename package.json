@@ -1,0 +1,37 @@
+{
+  "name": "chess-tg-bot",
+  "version": "0.1.0",
+  "description": "Telegram bot for playing chess",
+  "author": "obzori",
+  "license": "ISC",
+  "type": "module",
+  "private": true,
+  "keywords": [
+    "telegram",
+    "bot",
+    "chess",
+    "grammy",
+    "typescript"
+  ],
+  "main": "dist/bot.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/bot.js",
+    "clean": "rmdir /s /q dist"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "grammy": "^1.43.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.2",
+    "typescript": "^6.0.3"
+  }
+}
